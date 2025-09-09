@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Portfolio</title>
+  <!-- New Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #008080;   /* teal */
+      --accent: #ff6f61;   /* coral */
+      --bg: #fafafa;
+      --card-bg: #fff;
+      --text: #222;
+      --shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 2rem 0 1rem 0;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    header p {
+      margin: 0.5rem 0 0 0;
+      font-size: 1.1rem;
+      font-weight: 400;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+      text-align: center;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+    }
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background: var(--card-bg);
+      box-shadow: var(--shadow);
+      border-radius: 14px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    .about-img {
+      flex: 1 1 180px;
+      max-width: 180px;
+      margin-right: 2rem;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,128,128,0.2);
+    }
+    .about-img img {
+      width: 100%;
+      display: block;
+    }
+    .about-text {
+      flex: 2 1 300px;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    .skill-card {
+      background: var(--card-bg);
+      box-shadow: var(--shadow);
+      border-radius: 10px;
+      padding: 1rem 2rem;
+      min-width: 120px;
+      text-align: center;
+      font-weight: 600;
+      color: var(--primary);
+      transition: all 0.3s ease;
+    }
+    .skill-card:hover {
+      transform: translateY(-5px);
+      background: var(--accent);
+      color: #fff;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    .project-card {
+      background: var(--card-bg);
+      box-shadow: var(--shadow);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 28px rgba(0,128,128,0.2);
+    }
+    .project-img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      background: #eee;
+    }
+    .project-content {
+      padding: 1rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .project-title {
+      font-size: 1.2
